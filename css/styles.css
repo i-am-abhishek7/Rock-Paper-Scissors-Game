@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreboard {
+  width: 700px;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.title-image {
+  padding-left: 30px;
+}
+
+.score {
+  width: 150px;
+  height: 110px;
+  background-color: lightgray;
+  border-radius: 16px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.score h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 56px;
+  color: #808080;
+}
+
+.score p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5;
+  font-style: normal;
+  color: #800080;
+  /* text-align: left; */
+}
+
+.hand__signs {
+  background-image: url("../assets/triangle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 476px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.paper__sign {
+  margin-right: 20px;
+}
+
+.scissors__sign {
+  margin-left: 20px;
+}
+
+.hand__signs img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.hand__signs .hand__sign {
+  cursor: pointer;
+  transition: all 0.26s;
+}
+
+.hand__signs .hand__sign:hover {
+  transform: translate3d(0px, -8px, 0px);
+}
+
+.contest {
+  width: 900px;
+  margin-top: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.contest img {
+  width: 275px;
+  height: 275px;
+}
+
+/* .contest > div {
+  flex: 1;
+} */
+
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contest .handImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.refree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.refree h1 {
+  font-size: 45px;
+}
+
+.newGame {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 18px;
+  cursor: pointer;
+  color: hsl(228, 51%, 33%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: all 0.25s;
+}
+
+.newGame:hover {
+  transform: translate3d(0px, -8px, 0px);
+  background-color: bisque;
+}
